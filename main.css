@@ -15,7 +15,7 @@ a:hover{
     height: 90vh;
 }
 .card{
-    width: 22.5rem;
+    width: 20.5rem;
 }
 .card:hover{
     transform: scale(1.02);
@@ -35,4 +35,9 @@ a:hover{
 .hero-title{
     background: #000a;
     width: max-content;
+}
+.about-text{
+    max-width: 45rem;
+    min-width: 22rem;
+    margin:2rem auto;
 }
