@@ -47,9 +47,10 @@
                     </li>
                 </ul>
                 <form class="d-flex me-5 py-2" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="searchbar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success">Search</button>
                 </form>
+                <a class="btn btn-primary" href="./signin.html">Sign In</a>
             </div>
         </div>
     </nav>
@@ -106,14 +107,14 @@
 
 
     </div>
-<div class="subscribe-form container w-50 bg-dark m-3 rounded-3 mx-auto">
-    <h3 class="text-white p-4 display-3">Subscribe to Udti Khabarein</h3>
-    <form action="" method="POST" class="text-center">
-        <input class="form-control my-2 w-75 mx-auto" type="text" required name="name" placeholder="Your Name">
-        <input class="form-control my-2 w-75 mx-auto" type="email" required name="email" placeholder="Your Email">
-        <input class="btn btn-primary my-3" type="submit" value="Subscribe">
-    </form>
-</div>
+    <div class="subscribe-form container w-50 bg-dark m-3 rounded-3 mx-auto">
+        <h3 class="text-white p-4 display-3">Subscribe to Udti Khabarein</h3>
+        <form action="" method="POST" class="text-center">
+            <input class="form-control my-2 w-75 mx-auto" type="text" required name="name" placeholder="Your Name">
+            <input class="form-control my-2 w-75 mx-auto" type="email" required name="email" placeholder="Your Email">
+            <input class="btn btn-primary my-3" type="submit" value="Subscribe">
+        </form>
+    </div>
 
     <footer class="bg-dark text-white mb-0 py-5 d-flex flex-column align-content-center text-center">
         <ul class="list-unstyled hstack align-self-center d-flex flex-wrap justify-content-center">
@@ -130,125 +131,16 @@
     </footer>
 
 
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
     <script>
-        const trending_data = [
-            {
-                "id": 1,
-                "cover": "https://images.pexels.com/photos/11158776/pexels-photo-11158776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                "title": "The First Article",
-                "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos praesentium ut cumque ad. Voluptas maiores dicta veniam, est consequuntur neque libero illo beatae nulla qui! Reiciendis voluptate quasi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos praesentium ut cumque ad. Voluptas maiores dicta veniam, est consequuntur neque libero illo beatae nulla qui! Reiciendis voluptate quasi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos praesentium ut cumque ad. Voluptas maiores dicta veniam, est consequuntur neque libero illo beatae nulla qui! Reiciendis voluptate quasi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos praesentium ut cumque ad. Voluptas maiores dicta veniam, est consequuntur neque libero illo beatae nulla qui! Reiciendis voluptate quasi error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos praesentium ut cumque ad. Voluptas maiores dicta veniam, est consequuntur neque libero illo beatae nulla qui! Reiciendis voluptate quasi error?",
-                "author": "Rishabh",
-                "date": "24-09-2022",
-                "link": "./business/news-1.html"
-            },
-            {
-                "cover": "https://images.indianexpress.com/2022/11/rijiju_1200.jpg",
-                "title": "Fittest should be appointed, not someone whom Collegium knows: Law Minister Rijiju",
-                "body": `
-                Union Law Minister Kiren Rijiju on Friday said the present Supreme Court collegium system through which judges are appointed is “opaque”.
-
-The “fittest” persons should be appointed as judges and not someone whom the collegium knows, he said.
-
-The Union minister was speaking on 'Reforming Judiciary at the India Today conclave here. “I am not critical of the judiciary or the judges…I am not happy with the present system of the Supreme Court collegium. No system is perfect. We have to always strive and work towards a better system,” the minister said. The system has to be accountable and transparent, he said, adding, “If it is opaque, then who else will speak up against it if not the concerned minister.” He was only “reflecting the thinking” of the people including the lawyer community and even some judges, he said.
-
-“The basic fault with the present collegium system is that the judges are recommending those colleagues whom they know. Obviously, they would not recommend a judge they do not know,” Rijiju said.
-
-“The fittest should be appointed and not someone whom the collegium knows,” the minister said.
-Asked how the process would be different if the government were to be involved, Rijiju said the government has an independent mechanism to collect information and carry out due diligence.
-
-“The government has the intelligence bureau and several other reports to rely on before taking a decision. The judiciary or the judges do not have this,” he said.
-
-Across the world, governments appoint judges, the law minister said.
-“There is politics in the judiciary too because of this. They (judges) may not show it but there is intense politics,” Rijiju said.
-
-“Should the judges be stuck in such administrative work or spend more time in dispensing justice,” he asked.
-
-On the Supreme Court rejecting the National Judicial Appointments Commission Act, Rijiju said the government had not said anything on it so far.
-
-“When it was struck down, the government could have done something…but it did not as it respects the judiciary. But that does not mean we will keep quiet always,” he said.
-
-The Narendra Modi government believes in the independence of the judiciary and hence it did not take any step undermining it, he said.
-“But the judiciary should not get into the role of the Executive. When judges make oral comments, it gets wide coverage even though such comments have no bearing (on the case) whatsoever. A judge should speak through his or her order instead of making unnecessary comments and inviting criticism,” Rijiju said.
-
-Lamenting the large number of cases which get filed in courts across the country, Rijiju said most of the cases could be settled outside the courts.“We are introducing the mediation bill and I am hopeful it will be cleared in the upcoming winter session. A large number of cases can be settled through mediation,” he said.
-
-To make the courts accessible to more and more people, lawyers should be allowed to argue in the language they are comfortable in, the law minister said. “We have the technology to translate. This should be used,” he said.
-
-He was very upset when the Supreme Court “struck down” the sedition law despite the government assuring that it was reviewing the law, Rijiju said.
-
-“When the government has already said that the law and its provisions were old and hence we were taking a review of it, the Supreme Court struck it down. That is when I said everyone has a Lakshman Rekha that they should not cross,” Rijiju said. The Supreme Court in May this year suspended pending criminal trials and court proceedings under Section 124A (sedition) of the Indian Penal Code.
-                `,
-                "date": "04-11-2022",
-                "link": "./political/news-4.html",
-            },
-            {
-                "cover": "https://www.financialexpress.com/wp-content/uploads/2022/11/ux-gd97f12874_1280.jpg",
-                "title": "How small businesses can crack the right product-market fit",
-                "body": `
-                Ease of doing business for MSMEs: If there can be a perfect name given to a particular period, the one we live in today could be best described as the ‘age of entrepreneurs’. India has become one of the largest playgrounds for small businesses and start-ups, as a report suggests that there are over 77000 registered start-ups in India. Besides these start-ups, the total number of small businesses (including micro and small-sized enterprises) is estimated to be 42.50 million. The journey from micro to small and small to medium-sized businesses can take years. Also, building a profitable venture can take a few years. However, if an entrepreneur can crack the right product, something which the consumers want and can address an existing problem, it can play a pivotal role in shortening this journey. However, it is also a fact that almost 95% of new product ideas fail after or even before their introduction to the marketplace.  Also, only cracking a good product will not help. What is needed is to be able to build a product that solves a problem and continue to iterate it as the market evolves or as consumer preferences change. This is critical and big brands that haven’t evolved their products over a period of time have had to face huge losses and even face existential issues. 
-                Cracking the code for introducing the right product in the market can be a critical task, especially for small businesses that do not have the luxury of research and development resources and substantial capital backup. Also, young brands may not be able to get market intelligence in case they intend to venture into an unexplored category. 
-
-Here are a few tips that can be helpful while designing or conceiving a new product or service: 
-
-Locating the target consumer 
-
-The first step would be to locate the target consumer of the product or service the business intends to provide. The question here would be whether the company would cater to the masses or just a tiny section of society. It is critical to notice who would benefit from the product or service. It is a difficult step and requires product analysis, in-depth market research, and an understanding of your competition. This might mean that a business might have to shelve out time and resources in the first step itself, but it would be worth it as the overall probability of a failed product can be reduced considerably.  
-
-Subscribe to Financial Express SME newsletter now: Your weekly dose of news, views, and updates from the world of micro, small, and medium enterprises 
-
-Identification of customer pain points 
-
-After locating the target customers, a business must find out whether the proposed product or service can address the issues and pain points they face. For instance, if a company wants to address transportation-related challenges faced by the people of a Tier II city in India, it shall also be critical to find out the affordability of the product/service along with the transportation infrastructure, digital literacy, and the issues with the existing services in the market.  
-
-If we take the case of a fintech company that is trying to build a product to enable credit access for the masses, it is advisable to understand why big players like banks have not been able to address this challenge that has existed for long. This is when the concerned company will realize that there are existing gaps around reach, the process being followed and a limited number of customers being a part of the formal banking system. 
-
-Having a clear value proposition 
-
-The value proposition is your core idea of providing the best service or product for your customers and beating out your competitors in the process. For instance, a small business might not compete with large automobile companies in EV manufacturing. However, it can develop ideas and solutions to facilitate mobile charging stations at critical junctures across a city. This will not only make the business a significant part of the EV infrastructure but also ensure that the idea can deliver and transfer value to the customers.  
-
-Testing the product before rolling out 
-
-One of the most significant issues a product fails is the lack of testing and the inability to gain feedback from the end users before its eventual rollout. Any small business organisation should ensure that the product is provided for testing to the employees, friends, and acquaintances before the marketing processes for the rollout could begin. If you operate in the B2B space, it is advisable that the product is rolled out to a small set of customers so that the company can address any gaps/ issues that may crop up. 
-
-Also read: UPI: P2M transactions jump 126% to new all-time high in October from year ago period
-
-Even though this would mean that the actual launch would be delayed a bit, this could be a significant step towards saving a lot of money and resources otherwise spent on an eventually failed product. Even if a small business plans to develop a consumable material, this step could be taken by providing samples to the users.
-
-To sum up, the size of a business enterprise does not guarantee that each of its products or services will be accepted by the public. Cracking the correct code for product development could be pretty tricky. There are many examples where some of the world’s largest and most influential companies have made a mistake whilst conceiving, designing, and introducing a product in the market. Even though following these steps would not guarantee the success of a new product or service, it eliminates a significant amount of risk, which is a critical consideration for a small business enterprise.  
-
-Ankur Jain is the Chief Product Officer at BharatPe. Views expressed are the author’s own.
-                `,
-                "date": "05-11-2022",
-                "link": "./business/news-3.html"
-            },
-        ]
         $(document).ready(function () {
-            for (let i = 0; i < trending_data.length; i++) {
-                $('.trending-news').append(`
-                <a href="${trending_data[i].link}"><div class="card m-4 flex-shrink-0">
-            <img class="card-img-top"
-                src="${trending_data[i].cover}"
-                alt="">
-            <div class="card-body text-black">
-                <div class="card-title">${trending_data[i].title}</div>
-                <div class="card-text">${trending_data[i].body.substring(0, 120)}</div>
-                <div class="card-subtitle fw-bold my-2">${trending_data[i].date}</div>
-            </div>
-        </div></a>
-        `)
-            }
-        })
+            create_tiles(trending_data);
+        });
     </script>
 </body>
 

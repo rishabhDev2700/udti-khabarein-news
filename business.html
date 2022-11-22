@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="#">Latest</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Latest</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="./politics.html">Politics</a>
@@ -47,9 +47,10 @@
                     </li>
                 </ul>
                 <form class="d-flex me-5 py-2" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="searchbar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success">Search</button>
                 </form>
+                <a class="btn btn-primary" href="./signin.html">Sign In</a>
             </div>
         </div>
     </nav>
@@ -94,171 +95,12 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
     <script>
-        const trending_data = [
-            {
-                "cover": "https://www.financialexpress.com/wp-content/uploads/2022/11/bank-reuters.png",
-                "title": "Bank Holidays in November 2022: Banks closed for up to 9 days in various cities in November; check list",
-                "body": `
-                List of Bank Holidays For November 2022: Private and public sector banks across the country will remain closed for up to 9 days in the month of November including the second, fourth Saturdays, and Sundays. Banks will not be closed for nine days in all states or regions. This is the total number of days when banks in different parts of the country will remain closed for state-observed holidays. Banks will remain shut in different states or cities on account of different holidays. According to the list released by the Reserve Bank of India (RBI), banks will remain shut for up to three days, apart from weekends in November 2022. The list of holidays given below has been notified by RBI.
-
-Bank holidays in November 2022
-8 November 2022 (Tuesday): Guru Nanak Jayanti/Kartika Purnima/Rahas Purnima – Aizawl, Belapur, Bhopal, Bhubaneswar, Chandigarh, Dehradun, Hyderabad, Jaipur, Jammu, Kanpur, Kolkata, Lucknow, Mumbai, Nagpur, New Delhi, Raipur, Ranchi, Shimla and Srinagar
-11 November (Friday): Kanakadasa Jayanthi/Wangala Festival – Shillong, Bengaluru
-23 November (Wednesday): Seng Kutsnem – Shillong
-
-Weekend holidays in November 2022
-6 November 2022: Weekly off (Sunday)
-12 November 2022: Weekly off (Second Saturday)
-13 November 2022: Weekly off (Sunday)
-20 November 2022: Weekly off (Sunday)
-26 November 2022: Weekly off (Fourth Saturday)
-27 November 2022: Weekly off (Sunday)
-
-It may be noted that banks remain open on the first and third Saturdays every month. The Reserve Bank of India has categorised holidays into three categories — Holiday under Negotiable Instruments Act; Holiday under Negotiable Instruments Act and Real-Time Gross Settlement Holiday; and Banks’ Closing of Accounts. While planning bank-related work, people are advised to check the holiday date in their respective states.
-
-Bank services will get affected in the local branches in the respective states due to these festivals. It is advised to plan your bank-related work according to the holidays in order to avoid any inconvenience. However, facilities like online banking and UPI will be available to customers even when the banks are closed on holidays.
-                `,
-                "date": "5-11-2022",
-                "link": "./business/news-1.html"
-            },
-            {
-                "cover": "https://www.financialexpress.com/wp-content/uploads/2022/11/1-606.webp",
-                "title": "Petrochemicals industry to act as catalyst to realize India’s $5-trillion-dollar-economy vision",
-                "body": `
-                Petrochemicals are a vital cog in the global industrial arena and a major growth driver for economies. India has also been riding the petrochemicals wave, with increased domestic consumption and rising demand globally. The accelerated demand has been against the backdrop of its rising acceptance among diverse industry sectors such as medicines, construction, agriculture, textiles, automotive, etc.
-                In 2020, the per capita consumption of polymer in India was around 12 kilograms. This was way below the global average of 37 kilograms. With the progressive GDP trajectory, it is expected that the demand for petrochemical products will continue to grow significantly during the next twenty years. A recent Kearney-India study said that India is emerging as a global hub for petrochemical activity, which can be attributed to the wide gap in domestic consumption of petrochemicals.
-                Government thrust to curate a petro-ecosystem
-
-The government’s ongoing efforts to promote economic development in India are the main factor influencing the expansion of the petrochemical industry. The Department of Chemicals and Petrochemicals (DCPC) of the Government of India (GoI) has implemented several initiatives to improve the industry’s overall competitiveness, quality, and output. Initiatives such as Make in India, Aatmanirbhar Bharat Abhiyan, and the Production-Linked Incentive (PLI) Scheme are implemented to attract domestic manufacturing and facilitate exports.
-
-Some of the notable measures for promoting the growth of the petrochemical industry are the mandatory standards set by the Bureau of Indian Standards (BIS), public procurement policies for chemicals and petrochemicals, schemes for setting up plastic parks, and adequate support for research and innovation by setting up centers of excellence. All these policy incentives, low cost of manufacturing capital goods and manpower, and overall demand scenario are boosting business confidence to plan larger petrochemical complexes in India. It is evident from recent project announcements by major public sector units, private sector refiners, and niche specialty chemical players.
-
-Opportunities galore
-
-While India emerges strong in the petrochemical sector, it is not an exaggeration to say that it is fertile to capitalize on new opportunities. Firstly, India’s energy demand is rising at an unprecedented pace. By 2030, India’s oil demand will significantly rise from its current consumption. Besides domestic opportunities, the global scenario substantiates international exposure further.
-
-Over the years, China has been considered the major hub for petrochemicals. However, in recent times, the chemical industry in China is facing stricter environmental norms, approvals of which are necessary to source financing. This is slowly forcing the world to look at India as a potential market, especially in certain value chains and segments, providing India with the right platform for setting up these industries.
-
-There is another, more urgent need to transform India into a petrochemical hub. Petrochemical intermediates are the primary feedstock for specialty chemicals and constitute a large portion of petrochemical imports. India is an attractive market for global companies, thanks to its per capita income, rapidly changing lifestyle, and rising demand from the end-use industries. With the rising domestic demand and the current import dependence, India potentially needs world-scale petrochemical assets by 2035.
-
-Attracting investments
-
-To promote investment in the chemical and petrochemicals sector, active steps are being taken in amending the PCPIR policy. The proposed new PCPIR policy will be implemented between 2020–35 and is expected to attract an approximate combined investment of over INR 34 lakh crores (USD 420 billion) for the sector. So, the refining industry is gearing up for expansions. The gross refinery margins can receive a steady impetus from value-added petrochemical derivatives, the demand for which is quite potent given the current factors. Investments in petrochemicals are also being planned as part of these refinery expansions.
-
-The Sagarmala Programme that channels towards port modernization, development, and connectivity will help over 800 projects worth INR 5.48 lakh crores billion between 2015–2035 to reduce costs incurred for import and export trade. It will also encourage domestic trade with minimal investment in infrastructure development. The reduction in the corporate income tax rate for newly incorporated domestic manufacturing companies to 15% from 25% will make the return on investments made in India more attractive.
-
-Here is what we should look at
-
-India’s refinery and petrochemical hubs could construct industrial parks where focused innovation may be employed to create unique models for investors, replete with incentive programs. Making viable investment possibilities is the aim. Again, the growth of the sector also depends on the incubation of entrepreneurial initiatives, especially through talent development. Budding business owners in the sector have a wide selection of possibilities from both the plastic and textile clusters. Masterbatches, films, car parts, looms, packaging, and even spinning and weaving are a few of them. The sector could, in short, be leveraged for job creation, nation-building, and economic development.
-
-How the sector is gearing up
-
-In a time of uncertainties shaped by geopolitical setbacks, policy tightening measures, and disruption of global supply chains, delays in these planned petrochemical projects are already being handled effectively with promising growth from intrinsic sectors within India. Given the distinctive features of the Indian market, it is likely that the industry would see more win-win alliances between international and domestic businesses.
-
-Domestic players can benefit from their global partners’ financial, technological, and operational know-how to expedite their growth strategies. Global firms can profit from their local partners’ comprehensive knowledge of the Indian market, their systems for sales and distribution, and their marketing prowess. Domestically, effective collaboration between private players and the government can strengthen the Indian chemical industry. How the industry maps its actions could shape the sector’s future and help India realize its dream of becoming a 5-trillion-dollar economy.
-
-(Rajesh Kamath, CEO&MD, thyssenkrupp Industrial Solutions India Private Ltd. (The views expressed are of the author, and do not reflect the official position or policy of FinancialExpress.com.)
-                `,
-                "date": "05-11-2022",
-                "link": "./business/news-2.html"
-            },
-            {
-                "cover": "https://www.financialexpress.com/wp-content/uploads/2022/11/ux-gd97f12874_1280.jpg",
-                "title": "How small businesses can crack the right product-market fit",
-                "body": `
-                Ease of doing business for MSMEs: If there can be a perfect name given to a particular period, the one we live in today could be best described as the ‘age of entrepreneurs’. India has become one of the largest playgrounds for small businesses and start-ups, as a report suggests that there are over 77000 registered start-ups in India. Besides these start-ups, the total number of small businesses (including micro and small-sized enterprises) is estimated to be 42.50 million. The journey from micro to small and small to medium-sized businesses can take years. Also, building a profitable venture can take a few years. However, if an entrepreneur can crack the right product, something which the consumers want and can address an existing problem, it can play a pivotal role in shortening this journey. However, it is also a fact that almost 95% of new product ideas fail after or even before their introduction to the marketplace.  Also, only cracking a good product will not help. What is needed is to be able to build a product that solves a problem and continue to iterate it as the market evolves or as consumer preferences change. This is critical and big brands that haven’t evolved their products over a period of time have had to face huge losses and even face existential issues. 
-                Cracking the code for introducing the right product in the market can be a critical task, especially for small businesses that do not have the luxury of research and development resources and substantial capital backup. Also, young brands may not be able to get market intelligence in case they intend to venture into an unexplored category. 
-
-Here are a few tips that can be helpful while designing or conceiving a new product or service: 
-
-Locating the target consumer 
-
-The first step would be to locate the target consumer of the product or service the business intends to provide. The question here would be whether the company would cater to the masses or just a tiny section of society. It is critical to notice who would benefit from the product or service. It is a difficult step and requires product analysis, in-depth market research, and an understanding of your competition. This might mean that a business might have to shelve out time and resources in the first step itself, but it would be worth it as the overall probability of a failed product can be reduced considerably.  
-
-Subscribe to Financial Express SME newsletter now: Your weekly dose of news, views, and updates from the world of micro, small, and medium enterprises 
-
-Identification of customer pain points 
-
-After locating the target customers, a business must find out whether the proposed product or service can address the issues and pain points they face. For instance, if a company wants to address transportation-related challenges faced by the people of a Tier II city in India, it shall also be critical to find out the affordability of the product/service along with the transportation infrastructure, digital literacy, and the issues with the existing services in the market.  
-
-If we take the case of a fintech company that is trying to build a product to enable credit access for the masses, it is advisable to understand why big players like banks have not been able to address this challenge that has existed for long. This is when the concerned company will realize that there are existing gaps around reach, the process being followed and a limited number of customers being a part of the formal banking system. 
-
-Having a clear value proposition 
-
-The value proposition is your core idea of providing the best service or product for your customers and beating out your competitors in the process. For instance, a small business might not compete with large automobile companies in EV manufacturing. However, it can develop ideas and solutions to facilitate mobile charging stations at critical junctures across a city. This will not only make the business a significant part of the EV infrastructure but also ensure that the idea can deliver and transfer value to the customers.  
-
-Testing the product before rolling out 
-
-One of the most significant issues a product fails is the lack of testing and the inability to gain feedback from the end users before its eventual rollout. Any small business organisation should ensure that the product is provided for testing to the employees, friends, and acquaintances before the marketing processes for the rollout could begin. If you operate in the B2B space, it is advisable that the product is rolled out to a small set of customers so that the company can address any gaps/ issues that may crop up. 
-
-Also read: UPI: P2M transactions jump 126% to new all-time high in October from year ago period
-
-Even though this would mean that the actual launch would be delayed a bit, this could be a significant step towards saving a lot of money and resources otherwise spent on an eventually failed product. Even if a small business plans to develop a consumable material, this step could be taken by providing samples to the users.
-
-To sum up, the size of a business enterprise does not guarantee that each of its products or services will be accepted by the public. Cracking the correct code for product development could be pretty tricky. There are many examples where some of the world’s largest and most influential companies have made a mistake whilst conceiving, designing, and introducing a product in the market. Even though following these steps would not guarantee the success of a new product or service, it eliminates a significant amount of risk, which is a critical consideration for a small business enterprise.  
-
-Ankur Jain is the Chief Product Officer at BharatPe. Views expressed are the author’s own.
-                `,
-                "date": "05-11-2022",
-                "link": "./business/news-3.html"
-            },
-            {
-                "cover": "https://www.financialexpress.com/wp-content/uploads/2022/11/innovation-g1f113c89b_1280.jpg",
-                "title": "Why and how do MSME entrepreneurs need to tackle changes?",
-                "body": `
-                Ease of Doing Business for MSMEs: India is home to approximately 63 million micro, small and medium-sized enterprises (MSMEs). The MSME sector has emerged as a vibrant and dynamic segment of the Indian economy, growing at an annual rate of 18% and contributing about 30% to the national gross domestic product (GDP). MSMEs play an important role in social development, especially in the semi-urban and rural areas of the country, are integral to employment generation, and wealth creation and keep the wheel of the economy running. With the pandemic accelerating digitization, MSMEs must create a digital presence and adapt to a new way of running their businesses. From sourcing to answering customer queries, to marketing, MSMEs need to redefine their business practices.
-
-Workforce management
-A growing number of MSMEs, especially in the service sector, have been employing techniques that utilize staff with the right skill sets at the right places, at the right times to minimise risks and increase productivity, especially due to the advent of the hybrid mode of working. This ensures that organizations have a clear direction as to how future decisions will be made. By setting both short- and long-term objectives, MSMEs and entrepreneurs can gather the data thus allowing them to see overlaps and process gaps, and create standardized and even automated processes.
-
-However, as systems and processes are put into place for ensuring productivity and profitability, it is key that MSME leaders are cognizant of establishing and maintaining organisational culture.  The culture defines how the company relates to its human resources, how it adjusts its strategies and goals and how it creates and interacts with its customer base. As the behaviour of workers is easily influenced by the philosophy and beliefs of the manager or owner, it is crucial that the leader not only establishes a code of ethics but also embodies them.
-
-Governance for all
-As per a global survey on corporate governance, more than 50 per cent of the respondents comprising of senior management stated that the standards of integrity had not grown and have in fact deteriorated over the past two years. Be it scrutiny from regulators, a greater number of responsibilities on business leaders, or investor expectations – these factors have shown the need for an ethical framework within organisations. For MSMEs, governance may seem like a tedious activity, especially when their focus usually lies on core operations such as building a customer base and profitability. However, organisations that undermine creating an internal governance framework may face challenges due to reputational damage, fines, contract terminations and loss of investor confidence, among others. For instance, if a customer or a stakeholder feels their concerns were not appropriately addressed, they may resort to voicing their issues on an online forum which will have reputational and even financial repercussions. It has thus become imperative for MSMEs to create a strong governance framework to drive sustainable long-term growth and create value for all stakeholders.
-
-Diversification is a necessity
-Although MSMEs, especially in the service industry was severely impacted by the pandemic, they made a strong recovery because of their willingness to diversify their operations. For instance, a household product entrepreneur who catered to a B2B space was forced to pivot during the pandemic and address the demands of a B2C space, thus helping him address not only quality and product needs but also consumer expectations. Diversification not only helps businesses understand the changing expectations of the customers, but it also plays a major role in transforming a business’s narrative. However, while diversification is a suitable response to the demands of a post-pandemic business environment, MSMEs must also do their due diligence and conduct risk analysis and take carefully considered decisions. Technological measures such as digitization and automation have become a must-have and MSMEs must be quick to adapt the latest tools and know-how to stay relevant.
-
-Also Read: The state’s new food processing policy will address the concerns of the MSMEs: Yogi Adityanath
-
-In a post-Covid world, building resilient businesses is key and this can be achieved by investing in the right technologies, setting up the right processes, accessing the right financing options, having strong corporate governance and hiring right. However, many MSMEs are still at a nascent stage and require guidance, mentoring and the right solutions to enable them to build agile digital businesses. Services such as peer learning from like-minded MSME entrepreneurs can help in easy modification, seamless diversification and risk-free decision-making.
-
-Archanna Das is the CEO of ASCENT Foundation.
-                `,
-                "date": "05-11-2022",
-                "link": "./business/news-4.html"
-            },
-            {
-                "cover": "https://www.financialexpress.com/wp-content/uploads/2022/11/chandra1.jpg",
-                "title": "India set to dominate global supply chain: Tata Sons chief",
-                "body": `
-                India is poised to dominate the global supply chain and provide an alternative to China for the world, Tata Sons chairman N Chandrasekaran said at his keynote address at a convocation ceremony of Anant National University in Ahmedabad.
-
-“India is not only going to become the third-largest economy in the world in the years to come, but the country will also surpass the $5-trillion economy target soon,” he said, adding, “India’s infrastructure as well as domestic and export growth-led economy will increase the per capita income beyond $2,000 in the coming years.” For the youngsters, these developments will create huge economic opportunities and there would be a large-scale requirement of leadership.” “We’re fortunate we are residing in a country where there’s huge potential for growth. In the near future, global growth will be dominated by developing and emerging economies for decades to come,” he said.   Chandrasekaran told the graduating students that they are coming into the market at a pivotal moment in history as in the past 2-3 years people had experienced a complex and different world. “We all witnessed something which we hope to never experience in our lifetime again. We witnessed lots of hardships and it proved how resilient we are. However, all these have also created lots of opportunities too, especially in the digital technology space,” he said.
-
-The adoption and use of digital technology in the past couple of years has almost gained a decade of acceleration as the world believed in it, he said.
-                `,
-                "date": "24-09-2022",
-                "link": "./business/news-5.html"
-            },
-
-        ]
+        
         $(document).ready(function () {
-            for (let i = 0; i < trending_data.length; i++) {
-                $('.trending-news').append(`
-                <a href="${trending_data[i].link}"><div class="card m-4 flex flex-shrink-0">
-            <img class="card-img-top"
-                src="${trending_data[i].cover}"
-                alt="">
-            <div class="card-body text-black">
-                <div class="card-title">${trending_data[i].title}</div>
-                <div class="card-text">${trending_data[i].body.substring(0, 120)}...</div>
-                <div class="card-subtitle fw-bold my-2">${trending_data[i].date}</div>
-            </div>
-        </div></a>
-        `)
-            }
+            create_tiles(business_data);
         })
     </script>
 </body>

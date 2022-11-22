@@ -47,9 +47,10 @@
                     </li>
                 </ul>
                 <form class="d-flex me-5 py-2" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="searchbar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success">Search</button>
                 </form>
+                <a class="btn btn-primary" href="./signin.html">Sign In</a>
             </div>
         </div>
     </nav>
@@ -90,99 +91,11 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
     <script>
-        const trending_data = [
-            {
-                "cover": "https://images.indianexpress.com/2022/11/Virat-Kohli-3.jpg",
-                "title": "Playing in Australia doesn’t feel alien anymore: Virat Kohli",
-                "body": `
-                Virat Kohli loves playing in Australia and there is no question about it. He not only loves playing in the Down Under but has a legion of Aussie fans who are fascinated by his approach, which is traditionally associated with champion sides and players from Australia.
-                Be it the infamous ‘fingergate’ incident in Sydney, his first overseas Test century in Adelaide, his stunning 86-ball 133 against Sri Lanka in the ODI match in Hobart or winning the Border-Gavaskar Test series in 2018-19 as a captain, Kohli has owned the Australian shores. The Australian media and former cricketers are still gushing over his epic performance, the 82 not out against Pakistan at the MCG– a knock straight from the Australian playbook of winning games that seemed lost at one stage. Chappell brothers (Ian and Greg) are yet to digest his two sixes against Haris Rauf. Greg Chappell in a column for the Sydney Morning Herald has declared his innings as “A song of god,”, and he struck a metaphor from the book Bhagavad Gita to describe his October 23 heroics. It is not surprising that Kohli, too, likes playing in Australia. In a video shared by the BCCI.TV, he said: “Australia doesn’t feel alien anymore.”
-                “Pata nahi kya hai yaar, ek comfortable feeling aati hai yahaan pe aa ke (I don’t know what it is, but i feel really comfortable whenever I come here).”
-
-“Yahaan pe ek cheez maine dekhi hai na yahaan pe agar aap perfrom karo toh ek respect milti hai aapko, appreciation wo mujhe abhi pata chalta hai. Not just Indian fans but the locals too. (I have noticed one thing recently that if you perform here, you will be appreciated by the lcoal fans as well).
-
-“Local Aussies fan ko khushi hoti hai mujhko dekh kar. Mereko out of place kabhi lagta hi nahi hai Australia mei. Mai ghoomta hun toh aisa lagta hai yaar ki apni jagah hi hai ye (The local Aussie fans approaches me like I am one of their’s. I never feel out of place here. It feels like home away from home for me),” he added.
-
-With 220 runs in four matches, Virat Kohli is the leading run-getter of the T20 World Cup. He also speaks about his camaraderie with Rohit Sharma and the mood in the Indian camp.
-“Rohit and I have a similar vision – to make India win.’ It’s very free-flowing, it is all pointed towards main goal,” he said.
-
-“Baat toh special yahi hoti hai ki humey bada tournament kaise jeetna hai. Preparation, planning to sab us hisaab se hi hoti hai. Team ka mahool bahut acha hai aur jab aisi camarderie aur mahool hota hai toh aap excited hote ho khelne ke liye. (We generally talk about how to win the big tournaments. How we should execute the preparation and planning. When you have such kind of camarderie and environment in the team, you always feels excited to play the game.) You look forward to do anything for the team,” he added. India will play their last Super 12 game against Zimbabwe in Sydney on Sunday.
-                `,
-                "date": "05-11-2022",
-                "link": "./sports/news-1.html",
-            },
-            {
-                "cover": "https://images.indianexpress.com/2022/11/2022-shows-view-ocean-liner-770402265_1200x667.jpg",
-                "title": "FIFA World Cup: The billion pound cruise ship for England wags in Qatar",
-                "body": `
-                England Stars alongside their partners are all set to be travelling in £1bn luxury World Cup cruise ship for the upcoming World Cup in Qatar.
-
-However, Gareth Southgate’s men are kept away from their partners as the stars are confined to stay in strict COVID-19 bubbles.
-
-Meanwhile, footballer’s partners are to stay along with 6,762 guests on board the brand new MSC World Europa.
-To stay on board while the vessel is docked off at the coast of Doha in Qatar during the World Cup campaign it can cost up to £6,000 for the people on board.The travellers can dine at restaurants and bars which are on board when they stay on the Luxury ship.
-
-MSC World Europa boasts about the 643ft promenade pools, 14 ocean-view whirlpools, and six swimming
-
-There is the tallest slide on any ship in the world an 11-deck high helter-skelter called The Venom Drop — at 75m it is There is a 1,153-seat theatre on the luxury ship where guests can put their feet up. Meanwhile back on dry land, the England squad alongside the management will be staying at the Souq Al Wakra hotel in Doha.
-
-England will start their World Cup campaign against Iran on 21st November in Doha.England is in group B alongside Iran, USA and Wales and is expected to get out of the group and Southgate’s men are amongst the favourites to win the trophy.
-                `,
-                "date": "05-11-2022",
-                "link": "./sports/news-2.html",
-
-            },
-            {
-                "cover": "https://images.indianexpress.com/2022/11/Chennaiyins-Vafa-Hakhamaneshi-after-scoring-against-East-Bengal-on-Friday.jpg",
-                "title": "Iranian footballer protests hijab enforcement back home in ISL; receives yellow card",
-                "body": `
-                Vafa Hakhamaneshi escaped his marker, powered the ball past goalkeeper, dashed towards the cameras and lifted his t-shirt. Such goal celebrations are rather common in football but Vafa wanted to use the moment — his first goal in India and his club Chennaiyin — to send out a message.
-
-On the vest of the Iranian footballer were words of support for the women in his country. They read: #women #life #freedom for 11:11.
-
-These words have gained resonance among Iranians in the last few months. Following the death of Mahsa Amini, a 22-year-old woman who died in police custody in Tehran on September 13, arrested for not wearing the Hijab, protests have erupted across the country. The words on Vafa’s vest were reportedly chanted during Amini’s funeral by protesters, who are breaking the hijab law as a show of dissent. And in the days that followed, Iran’s footballers joined in. However, the show of solidarity, which came in the Indian Super League match against East Bengal on Friday, resulted in Vafa receiving a second yellow card, and thus being sent off. According to the rules, players are sanctioned by referees if they remove their shirt during celebration or even of they lift a shirt to reveal a political message.
-
-Hakhamaneshi, however, did not seem deterred. The 31-year-old Iranian was already shown a yellow card for a foul in the 60th minute.
-
-His goal nine minutes later, though, was enough for Chennaiyin to seal the win. Chennaiyin defeated East Bengal 1-0, their second win of the season while the Kolkata side suffered its fourth defeat in front of more than 17,000 fans. Hakhamaneshi, a defender, joined Chennaiyin from Thai club Ratchaburi ahead of this season. Iran’s footballers have shown support to Amini, leading with their talismanic attacker Sardar Azmoun, who posted a social media message last month. Then, during their final match ahead of the World Cup against Senegal, the Iranian team came out of the dugout wearing black jackets to cover their national team logos during the national anthem in support of the women of Iran. Other football legends like former Bayern Munich player, once dubbed the ‘Asian Maradona,’ Ali Karimi, and Iran striker Ali Daei were also vocal in their support on social media. Iranian player Zobeir Niknafs also shaved his head in solidarity with Amini and Iranian women.
-                `,
-                "date": "05-11-2022",
-                "link": "./sports/news-3.html",
-
-            },
-            {
-                "cover": "https://images.indianexpress.com/2022/11/Mitchell-Starc-1.jpg",
-                "title": "T20 World Cup: Australia greats question Mitchell Starc’s absence win narrow win over Afghanistan",
-                "body": `Australia’s title defence at the T20 World Cup is no longer in their own hands after a massive opening-day defeat against New Zealand dented their Net Run Rate (NRR). On Friday against Afghanistan, the team were in dire need of a win by a massive margin against Afghanistan but narrowly escaped with a four-run victory in the final over. Losing the NRR battle, they will now need Sri Lanka to defeat England on Saturday in order to qualify for the semifinals.
-
-Aussie greats like Michael Clarke, Adam Gilchrist, and Shane Watson questioned the side’s approach in dropping Mitchell Starc from the bowling lineup, especially when they needed to take quick wickets to win by a big margin.
-
-“Strange one. He’s got to be injured. There’s absolutely no way you can leave him out of tonight’s game,” Clarke said on commentary per Fox Sports. “If anyone’s going to rip through Afghanistan’s batting it’s Mitchell Starc. Left arm, if it swings with the new ball and then we’ve seen his yorkers at the death. I don’t get it.”
-The former Australian captain reiterated his confusion over Starc’s absence while commentating on the game. “No Mitchell Starc. I still can’t believe it to be honest. I think we saw a bit of swing. I think Starc right now with the new ball swinging back into the right-handers would’ve been lethal,” he said. “He’d have been my first bowler picked against this Afghanistan line-up.”
-On commentary, Gilchrist mentioned that Starc was left out from the side to which Watson responded: “Are we going to go there?” Former Australian cricketers Mark Waugh and Tom Moody took to Twitter to vent their frustration over the left-armer’s absence. “Starc should be playing. He is (an) aggressive wicket-taking bowler who could easily rip through Afghanistan. (Kane) Richardson more of a holding type bowler,” Vaugh tweeted. Even Afghanistan’s coach Jonathan Trott, the former England batsman, was surprised. ”It was a little bit of a surprise to us. We’re not sure why Starc didn’t play …. Obviously, we saw Richardson marking his run-up. That was a real surprise for us – we don’t know any reason.” Australia assistant coach Daniel Vettori revealed that Starc was fit, and his omission was based on Kane Richardson’s superior economy rate at the death. “It was a tactical decision,” he said post-match. “We brought in Kane to play the role he executed tonight at the back-end of the powerplay, looking at the death overs where Kane has been exceptional in the past.”
-`,
-                "date": "05-11-2022",
-                "link": "./sports/news-4.html",
-
-            },
-
-        ]
-        $(document).ready(function () {
-            for (let i = 0; i < trending_data.length; i++) {
-                $('.trending-news').append(`
-        <a href="${trending_data[i].link}"><div class="card m-4 flex-shrink-0">
-            <img class="card-img-top"
-                src="${trending_data[i].cover}"
-                alt="">
-            <div class="card-body text-black">
-                <div class="card-title fw-semibold">${trending_data[i].title}</div>
-                <div class="card-text">${trending_data[i].body.substring(0, 120)}</div>
-                <div class="card-subtitle fw-bold my-2">${trending_data[i].date}</div>
-            </div>
-        </div></a>
-        `)
-            }
+                $(document).ready(function () {
+                    create_tiles(sports_data);
         })
     </script>
 </body>

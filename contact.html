@@ -47,18 +47,19 @@
                     </li>
                 </ul>
                 <form class="d-flex me-5 py-2" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input id="searchbar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success">Search</button>
                 </form>
+                <a class="btn btn-primary" href="./signin.html">Sign In</a>
             </div>
         </div>
     </nav>
     <div class="text-center display-2 my-5">Send us your Feedback</div>
-    <form action="" class="w-50 mx-auto rounded-4 m-4">
+    <form action="" class="w-50 mx-auto rounded-4 m-4" mho>
         <div class="mb-3 row">
             <label for="Email" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
-                <input type="text" required class="form-control" id="Email" placeholder="email">
+                <input type="email" required class="form-control" id="Email" placeholder="email">
             </div>
         </div>
         <div class="mb-3 row">
@@ -70,7 +71,8 @@
         <div class="mb-3 row">
             <label for="message" class="col-sm-2 col-form-label">Message</label>
             <div class="col-sm-10">
-                <textarea class="form-control" required name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                <textarea class="form-control" required name="message" id="message" cols="30" rows="10"
+                    placeholder="Type your message here"></textarea>
             </div>
         </div>
         <div class="mb-3 row w-50 mx-auto">
@@ -96,6 +98,9 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+
 </body>
 
 </html>

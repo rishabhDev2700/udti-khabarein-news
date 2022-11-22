@@ -1,20 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Politics News</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark py-2 fs-5 sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand fs-2 mx-3" href="./index.html"><img class="me-1 " src="./brand.png" width="40px"
+            <a class="navbar-brand fs-2 ms-3" href="./index.html"><img class="me-1 " src="./brand.png" width="40px"
                     alt="">Udti
                 Khabarein</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,10 +25,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item mx-2">
-                        <a class="nav-link" aria-current="page" href="./index.html">Latest</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Latest</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" href="./politics.html">Politics</a>
+                        <a class="nav-link" href="./politics.html">Politics</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="./business.html">Business</a>
@@ -39,7 +39,6 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="./entertainment.html">Entertainment</a>
                     </li>
-
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="./contact.html">Contact us</a>
                     </li>
@@ -56,54 +55,32 @@
         </div>
     </nav>
 
-    <div class="index-hero"
-        style="background-image: url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');">
-        <h2 class="display-3 text-white rounded-3 hero-title p-2 mx-auto mt-3">Politics News</h2>
+
+    <div class="container">
+        <h1 class="text-center my-4">Sign In</h1>
+        <div class="d-flex justify-content-around flex-wrap-reverse">
+            <form action="" class="form-input mt-5" method="get">
+                <label for="username" class="form-label">Username</label>
+                <input required type="text" class="form-control" id="username" name="username">
+                <label for="password" class="form-label">Password</label>
+                <input required type="password" class="form-control">
+                <a href="./admin.html" class="btn btn-primary my-4 px-3 py-2">Sign In</a>
+            </form>
+            <img class="overflow-hidden" height="300px"
+                src="https://thumbs.dreamstime.com/b/actualit%C3%A9s-concept-de-journalisme-mains-avec-des-microphones-49121437.jpg"
+                alt="">
+        </div>
     </div>
-    <!-- trending news section -->
-
-    <div class="trending-news container-fluid d-flex justify-content-center flex-wrap">
 
 
-
-    </div>
-
-
-
-    <footer class="bg-dark text-white mb-0 py-5 d-flex flex-column align-content-center text-center">
-        <ul class="list-unstyled hstack align-self-center d-flex flex-wrap justify-content-center">
-            <li><a class="mx-3 my-2" href="./index.html">Latest</a></li>
-            <li><a class="mx-3 my-2" href="./politics.html">Politics</a></li>
-            <li><a class="mx-3 my-2" href="./business.html">Business</a></li>
-            <li><a class="mx-3 my-2" href="./sports.html">Sports</a></li>
-            <li><a class="mx-3 my-2" href="./entertainment.html">Entertainment</a></li>
-            <li><a class="mx-3 my-2" href="./contact.html">Contact</a></li>
-            <li><a class="mx-3 my-2" href="./about.html">About</a></li>
-        </ul>
-        <div class="text-secondary fw-light fs-3">Created by Rishabh</div>
-        <div class="text-secondary fw-light fs-3">INT 219 - 2022</div>
-    </footer>
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 
-    <script>
-        
-        $(document).ready(function () {
-            create_tiles(politics_data);
-        })
-    </script>
 </body>
 
 </html>
